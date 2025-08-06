@@ -1,4 +1,4 @@
-# 🧹 Projet Java – Nettoyage de données CSV
+#  Projet Java – Nettoyage de données CSV
 
 ## Objectif
 Développer un programme Java pour effectuer le **nettoyage automatique** d’un fichier CSV contenant des données brutes.
