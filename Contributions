@@ -1,0 +1,13 @@
+LireFichierCSV
+Petit utilitaire Java pour lire un fichier CSV UTF-8 et obtenir son contenu sous forme de String[][].
+
+Fonctions:
+1- Lit le fichier avec BufferedReader en UTF-8
+
+2- Enlève le BOM (U+FEFF) si présent au tout début
+
+3- Découpe chaque ligne sur la virgule (,), en conservant les champs vides (split(",", -1))
+
+4- Trim de chaque cellule
+
+5- Retourne un tableau 2D : String[nbLignes][nbColonnes]
