@@ -1,0 +1,38 @@
+Contributions – Projet : Nettoyage de données CSV (Java)
+
+Groupe :
+FEUSSI NGUEMKAM ANGÈLE BLANDINE
+NGO NGWE MADELEINE IRMA
+
+Répartition des tâches
+1) Standardisation des données 
+•	Conception et implémentation de la détection automatique des colonnes numériques (≥ 50% parseables)
+•	Normalisation des nombres au format décimal point (ex. 1 234,56 → 1234.56 ; 518,625 → 518.625)
+•	Standardisation du texte (trim + minuscules)
+•	Préservation des valeurs non numériques en colonne détectée numérique
+•	Responsables : Angèle
+
+2) Gestion des valeurs manquantes 
+•	Définition des règles de remplacement (NA)
+•	Application cohérente avant standardisation
+•	Responsables : Madeleine
+
+3) Lecture du fichier CSV — réalisée ensemble
+•	Parse robuste (guillemets, virgules internes, BOM)
+•	Normalisation de la largeur des lignes
+•	Responsables : Angèle & Madeleine
+
+4) Sauvegarde CSV — réalisée ensemble
+•	Quotation des champs (virgules, guillemets, retours ligne)
+•	Échappement des guillemets ("") et encodage UTF-8
+•	Responsables : Angèle & Madeleine
+
+5) Main / Orchestration — réalisée ensemble
+•	Chaînage : Lecture → Manquants → Standardisation → Sauvegarde
+•	Tests de bout en bout sur le dataset d’exemple
+•	Responsables : Angèle & Madeleine
+
+6) Documentation et préparation
+•	Rédaction du README global et des README personnels
+•	Préparation à la présentation orale
+•	Responsables : Angèle & Madeleine
