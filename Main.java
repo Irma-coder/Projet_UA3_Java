@@ -22,6 +22,6 @@ public class Main {
         // 4 - Sauvegarde des données nettoyées
         SauvegardeFichierCSV.sauvegarderCSV(donneesFinales, "donnees_nettoyees1.csv");
 
-        System.out.println("✅ Nettoyage terminé. Fichier sauvegardé sous 'donnees_nettoyees.csv'.");
+        System.out.println("Nettoyage terminé. Fichier sauvegardé sous 'donnees_nettoyees.csv'.");
     }
 }
