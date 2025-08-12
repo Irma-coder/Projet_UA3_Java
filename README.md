@@ -1,5 +1,9 @@
 #  Projet Java – Nettoyage de données CSV
 
+## Collaborateurs 
+NGO NGWE MADELEINE IRMA  — valeurs manquantes 
+FEUSSI NGUEMKAM ANGELE BLANDINE— standardisation 
+
 ## Objectif
 Développer un programme Java pour effectuer le **nettoyage automatique** d’un fichier CSV contenant des données brutes.
 
@@ -48,12 +52,9 @@ Développer un programme Java pour effectuer le **nettoyage automatique** d’un
 ## Compilation & exécution
 ```bash
 javac -d out src/*.java
-java -cp out Main
+java -cp out Main```
 
 ---
-## Collaborateurs 
-NGO NGWE MADELEINE IRMA  — valeurs manquantes 
-FEUSSI NGUEMKAM ANGELE BLANDINE— standardisation 
 
 
 
