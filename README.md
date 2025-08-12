@@ -10,28 +10,23 @@ Développer un programme Java pour effectuer le **nettoyage automatique** d’un
 - Creation d'une classe Main pour implementer le programme
   
 - Lecture d’un fichier CSV :
-  Methode:
-  public static String [][] lireCSV(String chemin)
-  private static String removeBOM(String s)
-
-- Détection et suppression/remplacement des **valeurs manquantes**
-  Methode:
+  Methode:`String[][] data = LireFichierCSV.lireCSV(cheminFichier);`
   
-- Standardisation des chaînes de caractères (ex : mise en **majuscules**)
-  Methode:
+- Détection et suppression/remplacement des **valeurs manquantes**
+  Methode:`ValeursManquantes.remplacerNaN(data);`
+  
+- Standardisation des chaînes de caractères (ex : mise en **minuscule**)
+  Methode:`Standardisation.standardiser(dataPropre);`
   
 - Sauvegarde des données nettoyées dans un nouveau fichier
-  Methode:
-  public static void sauvegarderCSV(String[][] data, String chemin)
-  private static String joinCSV(String[] row)
-
+  Methode:`SauvegardeFichierCSV.sauvegarderCSV(donneesFinales, "donnees_nettoyees1.csv");`
 
 ---
 
 ##  Technologies utilisées
 
 - Java (JDK 8+)
-- IDE : IntelliJ (au choix)
+- IDE : IntelliJ 
 - Fichiers de test au format `.csv`
 - Fichiers de test au format `.txt`
 
@@ -50,8 +45,15 @@ Développer un programme Java pour effectuer le **nettoyage automatique** d’un
 - import java.nio.charset.StandardCharsets;
 
 ---
+## Compilation & exécution
+```bash
+javac -d out src/*.java
+java -cp out Main
+
+---
 ## Collaborateurs 
-NGO NGWE MADELEINE IRMA
+NGO NGWE MADELEINE IRMA  — valeurs manquantes 
+FEUSSI NGUEMKAM ANGELE BLANDINE— standardisation 
 
 
 
