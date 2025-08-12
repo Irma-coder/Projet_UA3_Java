@@ -1,4 +1,4 @@
-LireFichierCSV
+Madeleine -> LireFichierCSV
 Petit utilitaire Java pour lire un fichier CSV UTF-8 et obtenir son contenu sous forme de String[][].
 
 Fonctions:
@@ -11,3 +11,28 @@ Fonctions:
 4- Trim de chaque cellule
 
 5- Retourne un tableau 2D : String[nbLignes][nbColonnes]
+
+Madeleine -> SauvegarderFichierCSV
+Classe utilitaire pour écrire un tableau bidimensionnel de chaînes (String[][]) dans un fichier CSV encodé en UTF-8, avec un échappement conforme (guillemets doublés si nécessaire).
+
+Tâches effectuées (étapes)
+
+1- Si data == null → ne fait rien (retour immédiat).
+
+2- FileOutputStream(chemin) → écrit vers le fichier pointé par chemin.
+
+3- OutputStreamWriter(..., UTF_8) → force l’encodage UTF-8 (sans BOM).
+
+4- BufferedWriter(...) + try-with-resources → fermeture automatique même en cas d’exception.
+
+5- Pour chaque String[] row de data :
+Appel de joinCSV(row) pour assembler la ligne CSV.
+bw.write(...) puis bw.newLine() pour ajouter le séparateur de ligne dépendant du système (ex.: \r\n sous Windows).
+
+6- Formatage CSV (méthode privée joinCSV)
+Convertit null en chaîne vide. Cote la valeur si elle contient ,, ", saut de ligne (\n) ou retour chariot (\r).
+Double les guillemets internes (" → "") à l’intérieur d’une valeur cotée. Sépare les colonnes par , (virgule).
+
+7- Gestion des erreurs
+Toute IOException est re-levée en RuntimeException avec un message contextualisé.
+
