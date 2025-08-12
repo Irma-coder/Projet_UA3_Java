@@ -1,5 +1,18 @@
+Madeleine -> Main
+Classe utilitaire pour l'implementation du projet
+
+Fonctions:
+1- Lit le CSV local avec LireFichierCSV.lireCSV(path) (lecture UTF-8 + trim) 
+
+2- Standardise tout le tableau avec Standardisation.normaliserDecimauxTable(...) 
+
+3- Filtre les lignes où certaines colonnes obligatoires valent NaN via ValeursManquantes.filtrerLignesSansNaN(...)
+
+4- Exporte le résultat avec SauvegardeFichierCSV.sauvegarderCSV(..., cheminSortie) 
+
+
 Madeleine -> LireFichierCSV
-Petit utilitaire Java pour lire un fichier CSV UTF-8 et obtenir son contenu sous forme de String[][].
+Classe utilitaire Java pour lire un fichier CSV UTF-8 et obtenir son contenu sous forme de String[][].
 
 Fonctions:
 1- Lit le fichier avec BufferedReader en UTF-8
