@@ -45,3 +45,7 @@ Largeur constante : toutes les lignes conservent le même nombre de colonnes.
 Jeton fixe "NA" : choisi pour uniformiser la sortie (paramétrable si besoin).
 Pas de traitement spécifique pour les valeurs numériques ou textuelles : la transformation se limite au remplacement des valeurs manquantes.
 
+## Fichiers concernés
+Ma contribution : ValeursManquantes.java
+**contribution commune **Intégration : Main.java, LireFichierCSV.java, SauvegardeFichierCSV.java
+
